@@ -1,0 +1,350 @@
+/* clears the default spacing so i can set my own */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colours and basic text for both pages */
+body {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+    background-color: #FAF8F5;
+}
+
+/* mobile heading sizes first */
+h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #444444;
+    margin-bottom: 16px;
+}
+
+a {
+    color: #800020;
+}
+
+/* keeps both pages centred with room at the edges */
+.site-header,
+main,
+.site-footer {
+    width: 92%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* name and navigation stack on mobile */
+.site-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
+.brand {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #222222;
+    text-decoration: none;
+}
+
+/* puts the navigation links beside each other */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #800020;
+    text-decoration: underline;
+}
+/* hero sections stack on mobile */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.spotlight,
+.intro-panel {
+    background-color: #EEE8E2;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.spotlight p {
+    margin-bottom: 32px;
+}
+
+/* same button style across both pages */
+.button {
+    display: inline-block;
+    background-color: #800020;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+}
+
+.spotlight .button {
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #600018;
+}
+
+.intro-panel h2 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.intro-panel h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.quick-links {
+    list-style: none;
+}
+
+/* one column on mobile */
+.cards-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+/* stacks the content inside each card */
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #D8D0C8;
+    border-radius: 8px;
+}
+
+.project-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #EEE8E2;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.project-preview p {
+    margin-bottom: 0;
+    color: #555555;
+}
+
+.card > p {
+    margin-bottom: 24px;
+}
+
+/* pushes the buttons to the bottom of each card */
+.card .button {
+    margin-top: auto;
+}
+
+/* space between the intro and the case study */
+.detail-hero {
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.lead-text {
+    max-width: 1100px;
+}
+
+/* article and project details stack on mobile */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.case-study {
+    padding: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #D8D0C8;
+    border-radius: 8px;
+}
+
+.case-study p {
+    margin-bottom: 32px;
+}
+
+/* the visual placeholder from my wireframe */
+.case-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 240px;
+    padding: 24px;
+    margin-bottom: 32px;
+    background-color: #EEE8E2;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.case-preview p {
+    margin-bottom: 0;
+    color: #555555;
+}
+
+.project-details {
+    padding: 24px;
+    background-color: #EEE8E2;
+    border-radius: 8px;
+}
+
+.project-details h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.project-details p {
+    margin-bottom: 24px;
+}
+
+/* copyright and links stack on mobile */
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 48px;
+    margin-bottom: 40px;
+    padding: 24px;
+    background-color: #EEE8E2;
+    border-radius: 8px;
+}
+
+.site-footer p {
+    margin-bottom: 0;
+    color: #222222;
+}
+
+/* keeps github and email beside each other */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-links a {
+    font-weight: 500;
+}
+
+/* switches to the wider layouts on tablet and desktop */
+@media (min-width: 768px) {
+
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+    h1 {
+        font-size: 44px;
+        line-height: 56px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    /* wider spotlight with a smaller about panel */
+    .hero-grid {
+        grid-template-columns: 2fr 1fr;
+        margin-bottom: 40px;
+    }
+
+    .spotlight,
+    .intro-panel {
+        padding: 32px;
+    }
+
+    .spotlight p,
+    .lead-text,
+    .case-study > p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .spotlight .button {
+        width: auto;
+        min-width: 220px;
+    }
+
+    /* fits as many cards as the available space allows */
+    .cards-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .detail-hero {
+        margin-bottom: 48px;
+    }
+
+    /* larger article with a smaller project info sidebar */
+    .content-grid {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .case-study {
+        padding: 32px;
+    }
+
+    .case-preview {
+        min-height: 360px;
+    }
+
+    /* copyright on the left, links on the right */
+    .site-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px;
+    }
+}
